@@ -1,7 +1,46 @@
-div{
-    color: chartreuse;
+body {
+    margin: 0;
 }
 
-.segundodiv{
-    color: crimson;
+.logo img{
+    width: 50px;
+    padding-left: 10%;
 }
+
+.nav-container  {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    
+}
+
+a {
+    
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+nav a:hover {
+    color: red;
+}
+
+header .nav-container {
+    justify-content: space-between;
+}
+
+.logo {
+    
+}
+
+header a h2 {
+    font-size: 10px;
+    text-align: center;
+}
+
