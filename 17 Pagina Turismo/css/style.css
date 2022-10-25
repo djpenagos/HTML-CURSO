@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -64,20 +65,6 @@ main .banner .content h2 {
 main .banner .content p {
   color: #fff;
   font-size: 1.2em;
-}
-main .about {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-main .about .content-box {
-  min-width: 50%;
-  width: 50%;
-  text-align: end;
-  padding-right: 40px;
 }
 main .banner2 {
   position: relative;
@@ -220,6 +207,24 @@ main .footer .copyright a {
   text-decoration: none;
 }
 
+.about {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.about .content-box {
+  min-width: 50%;
+  width: 50%;
+  text-align: center;
+  padding-right: 40px;
+}
+.about .content-box p {
+  text-align: justify;
+}
+
 a.btn {
   position: relative;
   display: inline-block;
@@ -319,4 +324,19 @@ a.btn {
     filter: invert(1);
     max-width: 30px;
   }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #48daee;
 }/*# sourceMappingURL=style.css.map */
