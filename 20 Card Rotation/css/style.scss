@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    width: 100%;
+    flex-wrap: wrap;
+    .card{
+        position: relative;
+        width: 320px;
+        height: 320px;
+        margin: 20px;
+        transform-style: preserve-3d;
+        border-radius: 15px;
+        overflow: hidden;
+        .box{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            transform-style: preserve-3d;
+            transition: 2s ease;
+        }
+        &:hover{
+            .box{
+                transform: rotateY(180deg);
+
+            }
+        }
+        .img-box{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .content-box{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #333;
+            transform: rotateY(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            div{
+                transform-style: preserve-3d;
+                transform: translateZ(100px);
+                background: linear-gradient(45deg,#fe0061, #ffeb3b);
+                padding: 20px;
+                margin: 0 30px;
+                border-radius: 15px;
+                h2{
+                    font-size: 20px;
+                    color: #fff;
+                    letter-spacing: 1px;
+                    backface-visibility: hidden;
+                }
+                p{
+                    font-size: 16px;
+                    color: #fff;
+                    backface-visibility: hidden;
+                }
+            }
+        }
+    }
+}
